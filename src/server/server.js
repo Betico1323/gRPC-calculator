@@ -42,7 +42,7 @@ server.addService(Proto.Calculator.service, {
     Divide: divide,
 });
 
-// Iniciar el servidor en localhost:50051
+// Iniciar servidor
 server.bindAsync(SERVER_URI, grpc.ServerCredentials.createInsecure(), () => {
-    console.log('Servidor de calculadora lista en localhost:50051');
+    console.log(`Servidor de calculadora lista en ${SERVER_URI}`);
 });
