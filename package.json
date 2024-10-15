@@ -1,0 +1,20 @@
+{
+  "name": "calculadora-beto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:server": "node ./src/server/server.js",
+    "start:client": "node ./src/client/cli.js operar -i"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.12.2",
+    "@grpc/proto-loader": "^0.7.13",
+    "commander": "^12.1.0",
+    "grpc-promise": "^1.4.0",
+    "interactive-commander": "^0.5.190"
+  }
+}
